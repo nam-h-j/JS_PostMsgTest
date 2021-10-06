@@ -9,7 +9,7 @@
   <script type="text/javascript">
     window.addEventListener("load", function () {
       const origin = window.location.protocol + "//" + window.location.host;
-      document.writeln("wtf" + origin);
+      document.writeln(origin);
       console.log("iframe_opened");
       window.parent.postMessage("true!", "*");
     });

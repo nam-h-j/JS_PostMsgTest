@@ -7,10 +7,10 @@
     <title>iframe</title>
   </head>
   <script type="text/javascript">
-    const setOrigin = window.location.protocol + "//" + window.location.host;
-    const data = "this data from iframe";
     //setter
     window.addEventListener("load", function () {
+      const setOrigin = window.location.protocol + "//" + window.location.host;
+      const data = "this data from iframe";
       window.parent.postMessage(data, setOrigin);
     });
     //setter

@@ -11,9 +11,11 @@
       frmstart.location.href = "./iframe.html";
     }
 
+    //getter
     window.addEventListener("message", function (e) {
-      console.log("메시지: " + e.data);
+      console.log("parent html get data: " + e.data);
     });
+    //getter
   </script>
   <body>
     <button onclick="javascript:iframeStart()">iframeStart</button>

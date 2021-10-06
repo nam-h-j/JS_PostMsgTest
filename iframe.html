@@ -7,12 +7,13 @@
     <title>iframe</title>
   </head>
   <script type="text/javascript">
+    const setOrigin = window.location.protocol + "//" + window.location.host;
+    const data = "this data from iframe";
+    //setter
     window.addEventListener("load", function () {
-      const origin = window.location.protocol + "//" + window.location.host;
-      document.writeln(origin);
-      console.log("iframe_opened");
-      window.parent.postMessage("true!", "*");
+      window.parent.postMessage(data, setOrigin);
     });
+    //setter
   </script>
   <body>
     i'll send data to you!

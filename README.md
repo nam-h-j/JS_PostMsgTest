@@ -1,6 +1,6 @@
 # Javascirpt postMessage() test
 
-## 아이프레임 -> 부모html 값 넘겨주기
+### 아이프레임 -> 부모html 값 넘겨주기
 </br>
 
 ```

@@ -11,6 +11,7 @@ window.addEventListener("load", function () {
   window.parent.postMessage(data, origin);
 });
 //setter
+```
 
 > 부모 html쪽에서 데이터를 받는 부분<br>
 > message 이벤트를 걸어두면 아이프레임 쪽에서 postMessage가 실행되었을때 e.data로 값이 넘겨진다<br>
